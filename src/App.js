@@ -2,6 +2,10 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import HomePage from "./pages/homePage/homePage";
+import CreationPage from "./pages/creationPage/creationPage";
+import AllRecipesPage from "./pages/allRecipesPage/allRecipesPage";
+import RecipeDetailsPage from "./pages/recipeDetailsPage/recipeDetailsPage";
+import UpdatePage from "./pages/updatePage/updatePage";
 import Header from "./components/header/header.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import { createStructuredSelector } from "reselect";
@@ -20,6 +24,10 @@ class App extends React.Component {
         <Header />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/newRecipe" element={<CreationPage />} />
+          <Route exact path="/recipes" element={<AllRecipesPage />} />
+          <Route path="/recipes/update/:id" element={<UpdatePage />} />
+          <Route path=":id" element={<RecipeDetailsPage />} />
 
           <Route
             exact

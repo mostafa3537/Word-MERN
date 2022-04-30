@@ -20,7 +20,7 @@ const Header = ({ hidden, sections }) => {
         <span className="logo">Cooking Recipes</span>
       </Link>
       <div className="options ">
-        <Link className="option " to="/allRecipes">
+        <Link className="option " to="/recipes">
           All Recipes
         </Link>
         <Link className="option " to="/newRecipe">

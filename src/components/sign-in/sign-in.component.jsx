@@ -21,12 +21,10 @@ class SginIn extends React.Component {
 
     if (!emailError && !passwordError) {
       try {
-        console.log("123");
         axiosInstace.post("users/login", this.state).then((response) => {
-          console.log("response", response);
           localStorage.setItem("user_token", response.data.token);
           if (response.data.status === "success") {
-            window.location.replace("/")
+            window.location.replace("/recipes")
           }
         });
 
