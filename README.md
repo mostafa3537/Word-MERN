@@ -1,1 +1,1 @@
-simple website where you can view, save, update, delete your recipes.
+simple website where you can practice categorizing a set of words according to their part of speech.
