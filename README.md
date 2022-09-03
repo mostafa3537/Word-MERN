@@ -5,9 +5,7 @@
 React
 </p>
 
-> MERN is a Client-side implementation in React.
-MERN stack is the idea of using Javascript/Node for fullstack web development.
-
+> Client-side implementation in React.
 ## clone or download
 ```terminal
 $ git clone https://github.com/mostafa3537/WordS-ClientSide.git
